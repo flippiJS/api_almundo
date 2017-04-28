@@ -1,0 +1,661 @@
+[class^="icon-"], [class*=" icon-"] {
+  display: inline-block; }
+
+[class*="icon-none"] {
+  color: transparent; }
+
+[class*="icon-star"], [class*="icon-half-star"] {
+  color: #FDBA12; }
+
+@font-face {
+  font-family: 'almundo';
+  src: url("../fonts/almundo.eot?f3jeod");
+  src: url("../fonts/almundo.eot?f3jeod#iefix") format("embedded-opentype"), url("../fonts/almundo.ttf?f3jeod") format("truetype"), url("../fonts/almundo.woff?f3jeod") format("woff"), url("../fonts/almundo.svg?f3jeod#almundo") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'almundo' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-flights:before, .icon-TKT:before {
+  content: "\e900"; }
+
+.icon-hotels:before, .icon-HTL:before {
+  content: "\e901"; }
+
+.icon-packages:before, .icon-PKT:before, .borrar-prueba:before {
+  content: "\e902"; }
+
+.icon-cruises:before, .icon-CRU:before {
+  content: "\e903"; }
+
+.icon-cars:before, .icon-CAR:before {
+  content: "\e904"; }
+
+.icon-getaways:before {
+  content: "\e905"; }
+
+.icon-disney:before, .icon-PDN:before {
+  content: "\e906"; }
+
+.icon-trains:before, .icon-PTR:before {
+  content: "\e907"; }
+
+.icon-excursions:before, .icon-EXC:before, .icon-ACT:before {
+  content: "\e908"; }
+
+.icon-assistance:before, .icon-SME:before {
+  content: "\e909"; }
+
+.icon-destinations:before {
+  content: "\e90a"; }
+
+.icon-facebook:before {
+  content: "\e90b"; }
+
+.icon-twitter:before {
+  content: "\e90c"; }
+
+.icon-googleplus:before {
+  content: "\e90d"; }
+
+.icon-login:before {
+  content: "\e90e"; }
+
+.icon-phone:before {
+  content: "\e90f"; }
+
+.icon-pointer:before {
+  content: "\e910"; }
+
+.icon-flight-back:before {
+  content: "\e911"; }
+
+.icon-arrow-right:before {
+  content: "\e912"; }
+
+.icon-arrow-left:before {
+  content: "\e913"; }
+
+.icon-arrow-up:before {
+  content: "\e914"; }
+
+.icon-arrow-down:before {
+  content: "\e915"; }
+
+.icon-calendar:before {
+  content: "\e916"; }
+
+.icon-calendar-back:before {
+  content: "\e917"; }
+
+.icon-clock:before {
+  content: "\e918"; }
+
+.icon-credit-card:before {
+  content: "\e919"; }
+
+.icon-len:before {
+  content: "\e91a"; }
+
+.icon-zoom-in:before {
+  content: "\e91b"; }
+
+.icon-zoom-out:before {
+  content: "\e91c"; }
+
+.icon-star:before {
+  content: "\e91d"; }
+
+.icon-exclamation-circle:before {
+  content: "\e91e"; }
+
+.icon-check-circle:before {
+  content: "\e91f"; }
+
+.icon-close-circle:before {
+  content: "\e920"; }
+
+.icon-security:before {
+  content: "\e921"; }
+
+.icon-bell:before {
+  content: "\e922"; }
+
+.icon-bus:before {
+  content: "\e923"; }
+
+.icon-wifi:before {
+  content: "\e924"; }
+
+.icon-gift:before {
+  content: "\e925"; }
+
+.icon-cocktail:before {
+  content: "\e926"; }
+
+.icon-restaurant:before {
+  content: "\e927"; }
+
+.icon-laundry:before {
+  content: "\e928"; }
+
+.icon-gym:before {
+  content: "\e929"; }
+
+.icon-pool:before {
+  content: "\e92a"; }
+
+.icon-pool-children:before {
+  content: "\e92b"; }
+
+.icon-spa:before {
+  content: "\e92c"; }
+
+.icon-tv:before {
+  content: "\e92d"; }
+
+.icon-cinema:before {
+  content: "\e92e"; }
+
+.icon-hamburger:before {
+  content: "\e92f"; }
+
+.icon-iso-almundo:before {
+  content: "\e930"; }
+
+.icon-typo-almundo-es:before {
+  content: "\e931"; }
+
+.icon-typo-com-es:before {
+  content: "\e932"; }
+
+.icon-club-almundo:before {
+  content: "\e933"; }
+
+.icon-club-almundo2:before {
+  content: "\e934"; }
+
+.icon-financing:before {
+  content: "\e935"; }
+
+.icon-like:before {
+  content: "\e936"; }
+
+.icon-world:before {
+  content: "\e937"; }
+
+.icon-play:before {
+  content: "\e938"; }
+
+.icon-mail:before {
+  content: "\e939"; }
+
+.icon-ico-google:before {
+  content: "\e93a"; }
+
+.icon-ico-face:before {
+  content: "\e93b"; }
+
+.icon-ico-twitter:before {
+  content: "\e93c"; }
+
+.icon-typo-almundo-pt:before {
+  content: "\e93d"; }
+
+.icon-typo-com-pt:before {
+  content: "\e93e"; }
+
+.icon-stay:before {
+  content: "\e93f"; }
+
+.icon-cab:before {
+  content: "\e940"; }
+
+.icon-tip:before {
+  content: "\e941"; }
+
+.icon-summer:before {
+  content: "\e942"; }
+
+.icon-spring:before {
+  content: "\e943"; }
+
+.icon-autumn:before {
+  content: "\e944"; }
+
+.icon-winter:before {
+  content: "\e945"; }
+
+.icon-camera:before {
+  content: "\e946"; }
+
+.icon-ticket:before {
+  content: "\e947"; }
+
+.icon-ok:before {
+  content: "\e948"; }
+
+.icon-label:before {
+  content: "\e949"; }
+
+.icon-book:before {
+  content: "\e94a"; }
+
+.icon-logo-garantia:before {
+  content: "\e94b"; }
+
+.icon-crown:before {
+  content: "\e94c"; }
+
+.icon-date:before {
+  content: "\e94d"; }
+
+.icon-default-user:before {
+  content: "\e94e"; }
+
+.icon-close:before {
+  content: "\e94f"; }
+
+.icon-award:before {
+  content: "\e950"; }
+
+.icon-menu-items:before {
+  content: "\e951"; }
+
+.icon-cup:before {
+  content: "\e952"; }
+
+.icon-down:before {
+  content: "\e953"; }
+
+.icon-up:before {
+  content: "\e954"; }
+
+.icon-check-simple:before {
+  content: "\e955"; }
+
+.icon-pause:before {
+  content: "\e956"; }
+
+.icon-herramienta:before {
+  content: "\e957"; }
+
+.icon-edit:before {
+  content: "\e958"; }
+
+.icon-web:before {
+  content: "\e959"; }
+
+.icon-walk:before {
+  content: "\e95a"; }
+
+.icon-direction:before {
+  content: "\e95b"; }
+
+.icon-van:before {
+  content: "\e95c"; }
+
+.icon-card:before {
+  content: "\e95d"; }
+
+.icon-servicios:before {
+  content: "\e95e"; }
+
+.icon-info:before {
+  content: "\e95f"; }
+
+.icon-departure:before {
+  content: "\e960"; }
+
+.icon-arrival:before {
+  content: "\e961"; }
+
+.icon-moon:before {
+  content: "\e962"; }
+
+.icon-by-car:before {
+  content: "\e963"; }
+
+.icon-date-go:before {
+  content: "\e964"; }
+
+.icon-date-return:before {
+  content: "\e965"; }
+
+.icon-grade:before {
+  content: "\e966"; }
+
+.icon-location:before {
+  content: "\e967"; }
+
+.icon-pin:before {
+  content: "\e968"; }
+
+.icon-pin-active:before {
+  content: "\e969"; }
+
+.icon-arrow-go:before {
+  content: "\e96a"; }
+
+.icon-arrow-return:before {
+  content: "\e96b"; }
+
+.icon-circle-plus:before {
+  content: "\e96c"; }
+
+.icon-ico-linkedin:before {
+  content: "\e96d"; }
+
+.icon-dawn:before {
+  content: "\e96e"; }
+
+.icon-morning:before {
+  content: "\e96f"; }
+
+.icon-sun:before {
+  content: "\e970"; }
+
+.icon-night:before {
+  content: "\e971"; }
+
+.icon-cross:before {
+  content: "\e972"; }
+
+.icon-add:before {
+  content: "\e973"; }
+
+.icon-sub:before {
+  content: "\e974"; }
+
+.icon-recommended:before {
+  content: "\e975"; }
+
+.icon-piggy:before {
+  content: "\e976"; }
+
+.icon-sandglass:before {
+  content: "\e977"; }
+
+.icon-crown2:before {
+  content: "\e978"; }
+
+.icon-people:before {
+  content: "\e979"; }
+
+.icon-suitcase:before {
+  content: "\e97a"; }
+
+.icon-doors:before {
+  content: "\e97b"; }
+
+.icon-handle:before {
+  content: "\e97c"; }
+
+.icon-kilometer:before {
+  content: "\e97d"; }
+
+.icon-safari .path1:before {
+  content: "\e97e";
+  color: #5d5d5d; }
+
+.icon-safari .path2:before {
+  content: "\e97f";
+  margin-left: -1em;
+  color: white; }
+
+.icon-child:before {
+  content: "\e980"; }
+
+.icon-adult:before {
+  content: "\e981"; }
+
+.icon-key:before {
+  content: "\e982"; }
+
+.icon-air-conditioner:before {
+  content: "\e983"; }
+
+.icon-bill:before {
+  content: "\e984"; }
+
+.icon-reserved:before {
+  content: "\e985"; }
+
+.icon-cash:before {
+  content: "\e986"; }
+
+.icon-chrome:before {
+  content: "\e987"; }
+
+.icon-firefox:before {
+  content: "\e988"; }
+
+.icon-explorer:before {
+  content: "\e989"; }
+
+.icon-ico-instagram:before {
+  content: "\e98a"; }
+
+.icon-wifi2:before {
+  content: "\e98b"; }
+
+.icon-music:before {
+  content: "\e98c"; }
+
+.icon-coffe:before {
+  content: "\e98d"; }
+
+.icon-talk:before {
+  content: "\e98e"; }
+
+.icon-camara:before {
+  content: "\e98f"; }
+
+.icon-screen:before {
+  content: "\e990"; }
+
+.icon-print:before {
+  content: "\e991"; }
+
+.icon-link:before {
+  content: "\e992"; }
+
+.icon-rent:before {
+  content: "\e993"; }
+
+.icon-baby:before {
+  content: "\e994"; }
+
+.icon-map:before {
+  content: "\e995"; }
+
+.icon-peso:before {
+  content: "\e996"; }
+
+.icon-order:before {
+  content: "\e997"; }
+
+.icon-filter:before {
+  content: "\e998"; }
+
+.icon-half-star:before {
+  content: "\e999"; }
+
+.icon-recommended-hotel:before {
+  content: "\e99a"; }
+
+.icon-hotel-sale:before {
+  content: "\e99b"; }
+
+.icon-promotions:before {
+  content: "\e99c"; }
+
+.icon-trash:before {
+  content: "\e99d"; }
+
+.icon-export:before {
+  content: "\e99e"; }
+
+.icon-printer:before {
+  content: "\e99f"; }
+
+.icon-logout:before {
+  content: "\e9a0"; }
+
+.icon-contributors:before {
+  content: "\e9a1"; }
+
+.icon-company:before {
+  content: "\e9a2"; }
+
+.icon-reports:before {
+  content: "\e9a3"; }
+
+.icon-tree:before {
+  content: "\e9a4"; }
+
+.icon-sleep:before {
+  content: "\e9a5"; }
+
+.icon-breakfast:before {
+  content: "\e9a6"; }
+
+.icon-all-inclusive:before {
+  content: "\e9a7"; }
+
+.icon-half-board:before {
+  content: "\e9a8"; }
+
+.icon-full-board:before {
+  content: "\e9a9"; }
+
+.icon-new-account:before {
+  content: "\e9aa"; }
+
+.icon-neighborhood:before {
+  content: "\e9ab"; }
+
+.icon-info-alone:before {
+  content: "\e9ac"; }
+
+.icon-exclamation-alone:before {
+  content: "\e9ad"; }
+
+.icon-forward:before {
+  content: "\e9ae"; }
+
+.icon-forbidden:before {
+  content: "\e9af"; }
+
+.icon-products:before {
+  content: "\e9b0"; }
+
+.icon-device:before {
+  content: "\e9b1"; }
+
+.icon-balloon:before {
+  content: "\e9b2"; }
+
+.icon-medicine:before {
+  content: "\e9b3"; }
+
+.icon-ambulance:before {
+  content: "\e9b4"; }
+
+.icon-sports:before {
+  content: "\e9b5"; }
+
+.icon-pregnant:before {
+  content: "\e9b6"; }
+
+.icon-upgrade-sports:before {
+  content: "\e9b7"; }
+
+.icon-upgrade-cancellation:before {
+  content: "\e9b8"; }
+
+.icon-upgrade-pregnant:before {
+  content: "\e9b9"; }
+
+.icon-emegency-contact:before {
+  content: "\e9ba"; }
+
+.icon-upgrade:before {
+  content: "\e9bb"; }
+
+.icon-download:before {
+  content: "\e9bc"; }
+
+.icon-question:before {
+  content: "\e9bd"; }
+
+.icon-instagram:before {
+  content: "\e9be"; }
+
+.icon-linkedin:before {
+  content: "\e9bf"; }
+
+.icon-car-company:before {
+  content: "\e9c0"; }
+
+.icon-ski:before {
+  content: "\e9c1"; }
+
+.icon-offers:before {
+  content: "\e9c2"; }
+
+.icon-transfer:before {
+  content: "\e9c3"; }
+
+.icon-stops:before {
+  content: "\e9c4"; }
+
+.icon-mealplan:before {
+  content: "\e9c5"; }
+
+.icon-aggregate:before {
+  content: "\e9c6"; }
+
+.icon-change:before {
+  content: "\e9c7"; }
+
+.icon-room-service:before {
+  content: "\e9c8"; }
+
+.icon-smiling-face:before {
+  content: "\e9c9"; }
+
+.icon-iso-am-nocircle:before {
+  content: "\e9ca"; }
+
+.icon-logo-calm:before {
+  content: "\e9cb"; }
+
+.icon-magic:before {
+  content: "\e9cc"; }
+
+.icon-flight-hotel:before {
+  content: "\e9cd"; }
+
+.icon-flighthotel:before {
+  content: "\e9ce"; }
+
+.icon-bracelet:before {
+  content: "\e9cf"; }
+
+.icon-car-seat:before {
+  content: "\e9d0"; }
+
+.icon-wallet:before {
+  content: "\e9d1"; }

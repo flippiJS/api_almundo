@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html ng-app="alMundo">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <title>Franco Lippi - Al mundo</title>
+    <link rel="stylesheet" href="css/build.min.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+</head>
+
+<body ng-controller="appController">
+
+    <div class="container">
+
+        <nav class="nav-mobile hidden-lg">
+            <hr class="nav-divider" />
+            <div class="nav-head" data-toggle="collapse" data-target="#filtar" aria-expanded="false">
+                <span>Filtrar</span>
+                <span class="icon arrow"></span>
+            </div>
+            <div class="nav-container collapse" id="filtar" aria-expanded="false">
+                <filters>
+                    <div class="filter">
+                        <div class="filters-head" data-toggle="collapse" data-target="#nombre2" aria-expanded="false">
+                            <span class="icon icon-len"></span>
+                            <span>Nombre de hotel</span>
+                            <span class="icon arrow pull-right"></span>
+                        </div>
+                        <div class="filter-container collapse" id="nombre2" aria-expanded="false">
+                            <div class="row">
+                                <div class="col-xs-11 col-sm-10 col-xs-9">
+                                    <input class="serch-nombre" ng-model="nameQuery" id="nameQuery" placeholder="Ingrese el nombre del hotel ">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter">
+                        <div class="filters-head" data-toggle="collapse" data-target="#precio2" aria-expanded="false">
+                            <span class="icon icon-peso"></span>
+                            <span>Precio por noche</span>
+                            <span class="icon arrow pull-right"></span>
+                        </div>
+                        <div class="filter-container collapse" id="precio2" aria-expanded="false">
+                            <rzslider rz-slider-model="rangeInfo.minValue" rz-slider-high="rangeInfo.maxValue" rz-slider-options="rangeInfo.options"></rzslider>
+                        </div>
+                    </div>
+
+                    <div class="filter">
+                        <div class="filters-head" data-toggle="collapse" data-target="#estrellas2" aria-expanded="false">
+                            <span class="icon icon-star"></span>
+                            <span>Estrellas</span>
+                            <span class="icon arrow pull-right"></span>
+                        </div>
+                        <div class="filter-container collapse" id="estrellas2" aria-expanded="false">
+                            <div>
+                                <label><input type="checkbox" ng-change="updateStars(0)" ng-model="selectedStars.all" ng-false-value="null" ng-true-value="true"> Todas las Estrellas</label>
+                            </div>
+                            <div>
+                                <label><input type="checkbox" ng-change="updateStars(5)" ng-model="selectedStars.five" ng-false-value="null" ng-true-value="true"> <span class="icon icon-star"></span> <span class="icon icon-star"></span> <span class="icon icon-star"></span> <span class="icon icon-star"></span> <span class="icon icon-star"></span></label>
+                            </div>
+                            <div>
+                                <label><input type="checkbox" ng-change="updateStars(4)" ng-model="selectedStars.four" ng-false-value="null" ng-true-value="true"> <span class="icon icon-star"></span> <span class="icon icon-star"></span> <span class="icon icon-star"></span> <span class="icon icon-star"></span></label>
+                            </div>
+                            <div>
+                                <label><input type="checkbox" ng-change="updateStars(3)"   ng-model="selectedStars.three" ng-false-value="null" ng-true-value="true"> <span class="icon icon-star"></span> <span class="icon icon-star"></span> <span class="icon icon-star"></span> </label>
+                            </div>
+                            <div>
+                                <label><input type="checkbox" ng-change="updateStars(2)"  ng-model="selectedStars.two" ng-false-value="null" ng-true-value="true"> <span class="icon icon-star"></span> <span class="icon icon-star"></span></label>
+                            </div>
+                            <div>
+                                <label><input type="checkbox" ng-change="updateStars(1)"   ng-model="selectedStars.one" ng-false-value="null" ng-true-value="true"> <span class="icon icon-star"></span></label>
+                            </div>
+                        </div>
+                    </div>
+                    </filter>
+            </div>
+            <hr class="nav-divider" />
+        </nav>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="order">
+                    <label for="order" class="">Ordenar</label>
+                    <select id="order" ng-model="orderList" class="order-by">
+						<option value="recommended">Más relevantes</option>
+						<option value="price">Precio más bajo</option>
+						<option value="-price">Precio más alto</option>
+						<option value="stars">Menos estrellas</option>
+						<option value="-stars">Más estrellas</option>
+					</select>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <aside class="col-lg-3 hidden-xs hidden-md hidden-sm">
+                <filters>
+                    <h2>Filtrar</h2>
+
+                    <div class="filter">
+                        <div class="filters-head" data-toggle="collapse" data-target="#nombre" aria-expanded="true">
+                            <span class="icon icon-len"></span>
+                            <span>Nombre de hotel</span>
+                            <span class="icon arrow pull-right"></span>
+                        </div>
+                        <div class="filter-container collapse in" id="nombre" aria-expanded="true">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <input class="serch-nombre" ng-model="nameQuery" id="nameQuery" placeholder="Ingrese el nombre del hotel ">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter">
+                        <div class="filters-head" data-toggle="collapse" data-target="#precio" aria-expanded="true">
+                            <span class="icon icon-peso"></span>
+                            <span>Precio por noche</span>
+                            <span class="icon arrow pull-right"></span>
+                        </div>
+                        <div class="filter-container collapse in" id="precio" aria-expanded="true">
+                            <rzslider rz-slider-model="rangeInfo.minValue" rz-slider-high="rangeInfo.maxValue" rz-slider-options="rangeInfo.options"></rzslider>
+                        </div>
+                    </div>
+
+                    <div class="filter">
+                        <div class="filters-head" data-toggle="collapse" data-target="#estrellas" aria-expanded="true">
+                            <span class="icon icon-star"></span>
+                            <span>Estrellas</span>
+                            <span class="icon arrow pull-right"></span>
+                        </div>
+                        <div class="filter-container collapse in" id="estrellas" aria-expanded="true">
+                            <div>
+                                <label><input type="checkbox" ng-change="updateStars(0)" ng-model="selectedStars.all" ng-false-value="null" ng-true-value="true"> Todas las Estrellas</label>
+                            </div>
+                            <div>
+                                <label><input type="checkbox" ng-change="updateStars(5)" ng-model="selectedStars.five" ng-false-value="null" ng-true-value="true"> <span class="icon icon-star"></span> <span class="icon icon-star"></span> <span class="icon icon-star"></span> <span class="icon icon-star"></span> <span class="icon icon-star"></span></label>
+                            </div>
+                            <div>
+                                <label><input type="checkbox" ng-change="updateStars(4)" ng-model="selectedStars.four" ng-false-value="null" ng-true-value="true"> <span class="icon icon-star"></span> <span class="icon icon-star"></span> <span class="icon icon-star"></span> <span class="icon icon-star"></span></label>
+                            </div>
+                            <div>
+                                <label><input type="checkbox" ng-change="updateStars(3)"   ng-model="selectedStars.three" ng-false-value="null" ng-true-value="true"> <span class="icon icon-star"></span> <span class="icon icon-star"></span> <span class="icon icon-star"></span> </label>
+                            </div>
+                            <div>
+                                <label><input type="checkbox" ng-change="updateStars(2)"  ng-model="selectedStars.two" ng-false-value="null" ng-true-value="true"> <span class="icon icon-star"></span> <span class="icon icon-star"></span></label>
+                            </div>
+                            <div>
+                                <label><input type="checkbox" ng-change="updateStars(1)"   ng-model="selectedStars.one" ng-false-value="null" ng-true-value="true"> <span class="icon icon-star"></span></label>
+                            </div>
+                        </div>
+                    </div>
+                    </filter>
+            </aside>
+            <section class="col-lg-9">
+                <loading ng-show="loading">
+                    <div>
+                        <div class="loader"></div>
+                        <p>Actualizando resultados</p>
+                    </div>
+                </loading>
+                <article ng-repeat="hotel in hotels | filter:nameQuery | priceRange:rangeInfo | starsFilter:selectedStars | orderBy: orderList" ng-show=" hotels " class="ng-hide ">
+                    <div class="row ">
+                        <div class="col-md-4 ">
+                            <div class="carousel-inner " role="listbox ">
+                                <img src="{{ hotel.image }} " class="img-responsive " width="100% " height="100% ">
+                            </div>
+                        </div>
+                        <div class="col-md-5 ">
+                            <h1>{{ hotel.name }}</h1>
+                            <p class="stars ">
+                                <span class="icon-star " ng-show="hotel.stars>=1"></span>
+                                <span class="icon-star" ng-show="hotel.stars>=2"></span>
+                                <span class="icon-star" ng-show="hotel.stars>=3"></span>
+                                <span class="icon-star" ng-show="hotel.stars>=4"></span>
+                                <span class="icon-star" ng-show="hotel.stars>=5"></span>
+                            </p>
+                        </div>
+                        <div class="price col-md-3 text-center">
+                            <p class="description">Precio por noche por habitación</p>
+                            <p class="mount">
+                                <strong>ARS ${{ hotel.price }}</strong>
+                            </p>
+                            <p class="legal">Impuestos y tasas no incluidos</p>
+                            <a href="#" class="btn">Ver hotel</a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+        </div>
+    </div>
+    <script src="js/jquery-3.2.0.min.js" type="text/javascript"></script>
+    <script src="js/angular.min.js" type="text/javascript"></script>
+    <script src="js/angular-ui-router.min.js"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap-slider.min.js" type="text/javascript"></script>
+    <script src="js/rzslider.min.js" type="text/javascript"></script>
+    <script src="js/app.js" type="text/javascript"></script>
+</body>
+
+</html>
