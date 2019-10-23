@@ -9,7 +9,7 @@
     "author": "Franco Lippi",
     "dependencies": {
         "express": "4.17.1",
-        "mongoose": "3.6.11"
+        "mongoose": "5.7.6"
     },
     "devDependencies": {
         "gulp": "^3.9.1",
